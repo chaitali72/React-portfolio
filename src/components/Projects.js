@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Project from "./SingleProj";
 const projects = [
   {
     id: 1,
@@ -39,12 +39,59 @@ const projects = [
   },
 ];
 export class Projects extends Component {
+  state = {
+    project_id: 1,
+  };
+  setProject = (id) => {
+    this.setProject({ project_id: id });
+  };
   render() {
+    const selectedProject = projects.find(
+      (project) => project.id === this.state.project_id
+    );
     return (
-      <div>
+      <div className="mt-5 p-4 project-section">
         <h1>Projects</h1>
+
         <hr />
-        <div className="container"></div>
+        <div className="container mb-4 pb-4">
+          <div className="project-content row card-section">
+            <div className="col-lg-4 mb-4 text-left">
+              <div className="card p-3 card-project-list">
+                <ul className="list-group list-group-flush">
+                  {projects.map((project) => (
+                    <li
+                      key={project.id}
+                      className="list-group-item"
+                      style={{
+                        color: "black",
+                        cursor: "pointer",
+                        backgroundColor: "grey",
+                      }}
+                      onClick={() => this.setProject(project.id)}
+                      id={selectedProject.id === project.id ? "selected" : ""}
+                    >
+                      {selectedProject.id === project.id ? (
+                        <span style={{ color: "#B7B6C2" }}>
+                          <i className="fa fa-play"></i>
+                        </span>
+                      ) : (
+                        project.title
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <Project
+              key={selectedProject.id}
+              title={selectedProject.title}
+              service={selectedProject.website}
+              stack={selectedProject.techstack}
+              github={selectedProject.github}
+            ></Project>
+          </div>
+        </div>
       </div>
     );
   }
