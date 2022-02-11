@@ -17,16 +17,38 @@ export class About extends Component {
           <div class="row">
             <div className="col-lg-8">
               <div className="techicon">
-                <img src={react} alt="techlogo" className="tech-icons"></img>
+                <img
+                  src={react}
+                  alt="techlogo"
+                  className="tech-icons"
+                  width="50"
+                ></img>
                 <img src={node} alt="techlogo" className="tech-icons"></img>
                 <img
                   src={bootstrap}
                   alt="techlogo"
                   className="tech-icons"
+                  width="50"
                 ></img>
-                <img src={git} alt="techlogo" className="tech-icons"></img>
-                <img src={heroku} alt="techlogo" className="tech-icons"></img>
-                <img src={mongodb} alt="techlogo" className="tech-icons"></img>
+                <img
+                  src={git}
+                  alt="techlogo"
+                  width="50"
+                  className="tech-icons"
+                ></img>
+                <img
+                  src={heroku}
+                  alt="techlogo"
+                  width="50"
+                  className="tech-icons"
+                  width="50"
+                ></img>
+                <img
+                  src={mongodb}
+                  width="50"
+                  alt="techlogo"
+                  className="tech-icons"
+                ></img>
                 <br></br>
                 I'm a Full-Stack Software Developer based in Toronto,CA<br></br>
                 I am a software developer with +3 years of hands-on experience
@@ -41,18 +63,21 @@ export class About extends Component {
                 Heroku,Netlify,Firebase and Github.
               </div>
             </div>
-            <div className="col-lg-4">
-              <h2>Skills</h2>
-              <ul className="skill-lists">
-                <li>JavaScript</li>
-                <li>HTML5/css3</li>
-                <li>ReactJS</li>
-                <li>NOdeJS</li>
-                <li>MongoDB</li>
-                <li>ExpressJS</li>
-                <li>Ruby On Rails</li>
-              </ul>
-              <p></p>
+            <div
+              className="col-lg-4"
+              style={{ color: "black", fontSize: "20px" }}
+            >
+              <div className="skills-group">
+                <ul className="skill-lists" style={{ listStyle: "none" }}>
+                  <li>JavaScript</li>
+                  <li>HTML5/css3</li>
+                  <li>ReactJS</li>
+                  <li>NOdeJS</li>
+                  <li>MongoDB</li>
+                  <li>ExpressJS</li>
+                  <li>Ruby On Rails</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

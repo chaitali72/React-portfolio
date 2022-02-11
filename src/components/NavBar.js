@@ -23,9 +23,9 @@ export class NavBar extends Component {
         </button>
         <div className="collapse navbar-collapse mb-2" id="navbarNavAltMarkup">
           <ul className="navbar-nav nav-list mr-0">
-            <li className="navitem-list">
+            <li className="navitem-list ">
               <Link
-                className="link nav-item nav-link"
+                className="link nav-item nav-link "
                 activeClass="active"
                 to="Home"
                 spy={true}
@@ -37,9 +37,9 @@ export class NavBar extends Component {
                 Home
               </Link>
             </li>
-            <li className="navitem-list">
+            <li className="navitem-list ">
               <Link
-                className="link nav-item nav-link"
+                className="link nav-item nav-link "
                 to="About"
                 spy={true}
                 smooth={true}
@@ -52,7 +52,7 @@ export class NavBar extends Component {
             </li>
             <li className="navitem-list">
               <Link
-                className="link nav-item nav-link"
+                className="link nav-item nav-link "
                 to="Projects"
                 spy={true}
                 smooth={true}
@@ -66,8 +66,13 @@ export class NavBar extends Component {
           </ul>
         </div>
 
-        <div className="contact">
-          <span style={{ marginRight: "10px" }}>Contact: </span>
+        <div className="contact ">
+          <span
+            className="text-purple text-bold"
+            style={{ marginRight: "10px" }}
+          >
+            Contact:{" "}
+          </span>
           <a href={`mailto:chaitalismahida@gmail.com`}>
             <i class="fa fa-envelope" style={{ marginLeft: "10px" }}></i>
           </a>

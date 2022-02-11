@@ -5,14 +5,11 @@ export class Header extends Component {
     return (
       <div>
         <header>
-          <img
-            src={profile}
-            alt="profile"
-            className=" image_profile"
-          ></img>
+          <img src={profile} alt="profile" className=" image_profile"></img>
           <h2>Chaitali Mahida</h2>
         </header>
         <p className="header_title">Full Stack Software Developer</p>
+        <span>currently working at Kinoklik</span>
       </div>
     );
   }

@@ -8,9 +8,15 @@ export class SingleProj extends Component {
       <div className="col-lg-8">
         <div className="card bg-light mb-3 cardproject">
           <br />
+          <img
+            alt={this.props.title}
+            src={this.props.img}
+            style={{ height: "auto", width: "100%" }}
+          />
           <div className="card-body">
-            <h5 className="catd-title">{this.props.title}</h5>
-            <p className="card-desc">{this.props.techstack}</p>
+            <h5 className="catd-title text-bold">{this.props.title}</h5>
+            <p className="card-desc">{this.props.description}</p>
+            <p className="card-desc text-purple">{this.props.techstack}</p>
             {this.props.website ? (
               <a href={this.props.website} className="btn btn-info mr-2">
                 Website

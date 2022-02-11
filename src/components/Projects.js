@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Project from "./SingleProj";
+import portfolioimg from "./images/portfolio.png";
 const projects = [
   {
     id: 1,
@@ -7,6 +8,7 @@ const projects = [
     description:
       "Create A Movie Search Application using React Hooks And Movie db Fetch API",
     website: "https://chaitali72.github.io/",
+    img: portfolioimg,
     github: "https://github.com/chaitali72/MovieSearchApp",
     techstack: "React/Axios,node/mongodb",
   },
@@ -50,7 +52,7 @@ class Projects extends Component {
   };
 
   setProject = (id) => {
-    this.setProject({ project_id: id });
+    this.setState({ project_id: id });
   };
 
   render() {
@@ -66,7 +68,7 @@ class Projects extends Component {
           <div className="project-content row card-section">
             <div className="col-lg-4 mb-4 text-left">
               <div className="card p-3 card-project-list">
-                <ul className="list-group list-group-flush">
+                <ul className="list-group list-group-flush text-left">
                   {projects.map((project) => (
                     <li
                       key={project.id}
@@ -93,10 +95,9 @@ class Projects extends Component {
               title={selectedProject.title}
               description={selectedProject.description}
               website={selectedProject.website}
-              url={selectedProject.url}
-              git={selectedProject.git}
+              github={selectedProject.github}
               img={selectedProject.img}
-              tech={selectedProject.tech}
+              techstack={selectedProject.techstack}
             ></Project>
           </div>
         </div>
