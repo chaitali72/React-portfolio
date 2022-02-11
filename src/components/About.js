@@ -41,7 +41,6 @@ export class About extends Component {
                   alt="techlogo"
                   width="50"
                   className="tech-icons"
-                  width="50"
                 ></img>
                 <img
                   src={mongodb}
