@@ -4,6 +4,8 @@ const projects = [
   {
     id: 1,
     title: "Movie search App",
+    description:
+      "Create A Movie Search Application using React Hooks And Movie db Fetch API",
     website: "https://chaitali72.github.io/",
     github: "https://github.com/chaitali72/MovieSearchApp",
     techstack: "React/Axios,node/mongodb",
@@ -11,6 +13,7 @@ const projects = [
   {
     id: 2,
     title: "Portfolio",
+    description: "Personal portfolio to showcase my currrent work and prjects ",
     website: "https://chaitali72.github.io/",
     github: "https://github.com/chaitali72/chaitali72.github.io",
     techstack: "React/Axios,node/mongodb",
@@ -18,33 +21,38 @@ const projects = [
   {
     id: 3,
     title: "Netflix Clone",
-    website: "https://netflix-clone-6a5fc.web.app/",
+    description: "create a Netflix Clone using MERN stack",
     github: "https://github.com/chaitali72/NetflixClone-MERN",
     techstack: "React/Axios,node/mongodb",
   },
 
   {
     id: 4,
-    title: "Birthday Reminder App",
+    title: "A review application",
     website: "https://birthdayreminder-3e992.web.app/",
+    description:
+      "A review application where you can show the random review by different user using previous and next button using Vanilla Javascript,Html5,css3",
     github: "https://github.com/chaitali72/ReactProject-UseState-",
     techstack: "React/Axios,node/mongodb",
   },
   {
     id: 5,
     title: "React portfolio App",
+    description: "xreate a portfolio using react",
     website: "https://reactportfoilio.netlify.app/",
     github: "https://github.com/chaitali72/portfolioreact",
     techstack: "React/Axios,node/mongodb",
   },
 ];
-export class Projects extends Component {
+class Projects extends Component {
   state = {
     project_id: 1,
   };
+
   setProject = (id) => {
     this.setProject({ project_id: id });
   };
+
   render() {
     const selectedProject = projects.find(
       (project) => project.id === this.state.project_id
@@ -63,17 +71,14 @@ export class Projects extends Component {
                     <li
                       key={project.id}
                       className="list-group-item"
-                      style={{
-                        color: "black",
-                        cursor: "pointer",
-                        backgroundColor: "grey",
-                      }}
+                      style={{ color: "black", cursor: "pointer" }}
                       onClick={() => this.setProject(project.id)}
                       id={selectedProject.id === project.id ? "selected" : ""}
                     >
                       {selectedProject.id === project.id ? (
                         <span style={{ color: "#B7B6C2" }}>
-                          <i className="fa fa-play"></i>
+                          <i className="fa fa-play mr-3"></i>
+                          <strong>{project.title}</strong>
                         </span>
                       ) : (
                         project.title
@@ -86,9 +91,12 @@ export class Projects extends Component {
             <Project
               key={selectedProject.id}
               title={selectedProject.title}
-              service={selectedProject.website}
-              stack={selectedProject.techstack}
-              github={selectedProject.github}
+              description={selectedProject.description}
+              website={selectedProject.website}
+              url={selectedProject.url}
+              git={selectedProject.git}
+              img={selectedProject.img}
+              tech={selectedProject.tech}
             ></Project>
           </div>
         </div>

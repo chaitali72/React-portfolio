@@ -11,10 +11,11 @@ export class SingleProj extends Component {
           <div className="card-body">
             <h5 className="catd-title">{this.props.title}</h5>
             <p className="card-desc">{this.props.techstack}</p>
-
-            <a href={this.props.website} className="btn btn-primary mr-3">
-              website
-            </a>
+            {this.props.website ? (
+              <a href={this.props.website} className="btn btn-info mr-2">
+                Website
+              </a>
+            ) : null}
             <a href={this.props.github} className="btn btn-secondary">
               Github
             </a>
