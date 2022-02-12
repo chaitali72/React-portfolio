@@ -60,7 +60,7 @@ class Projects extends Component {
       (project) => project.id === this.state.project_id
     );
     return (
-      <div className="mt-5 p-4 project-section">
+      <div className="mt-5 p-4 App-project">
         <h1>Projects</h1>
 
         <hr />

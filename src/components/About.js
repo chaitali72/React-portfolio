@@ -9,8 +9,8 @@ import mongodb from "./images/mongodb.png";
 export class About extends Component {
   render() {
     return (
-      <div>
-        <h1>About Me:</h1>
+      <div className="App-about">
+        <h1 className="mt-5">About Me:</h1>
         <h3>Hello!</h3>
         <hr />
         <div className="container">
@@ -66,8 +66,8 @@ export class About extends Component {
               className="col-lg-4"
               style={{ color: "black", fontSize: "20px" }}
             >
-              <div className="skills-group">
-                <ul className="skill-lists" style={{ listStyle: "none" }}>
+              <div className="skills-group ">
+                <ul className="skill-lists  " style={{ listStyle: "none" }}>
                   <li>JavaScript</li>
                   <li>HTML5/css3</li>
                   <li>ReactJS</li>
