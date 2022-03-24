@@ -49,25 +49,28 @@ export class About extends Component {
                   className="tech-icons"
                 ></img>
                 <br></br>
-                I'm a Full-Stack Software Developer based in Toronto,CA<br></br>
-                I am a software developer with +3 years of hands-on experience
-                building full-stack applications.<br></br> I enjoy coding and
-                the challenge of learning something new everyday.<br></br> I
-                prefer Agile Methodology to implement Software Development Life
-                cycle(SDLC).<br></br> Love to build scalable,generic and long
-                term solution that are easy to maintain <br></br> Built personal
-                website to put my own projects with github repositories to
-                contribute with web dev community and live link is also
-                available on my website which is deployed via devOp tools like
-                Heroku,Netlify,Firebase and Github.
+                <p style={{ fontweight: "bold", fontSize: "1em" }}>
+                  I'm a Full-Stack Software Developer based in Toronto,CA
+                  <br></br>I am a software developer with +3 years of hands-on
+                  experience building full-stack applications.<br></br> I enjoy
+                  coding and the challenge of learning something new everyday.
+                  <br></br> I prefer Agile Methodology to implement Software
+                  Development Life cycle(SDLC).<br></br> Love to build
+                  scalable,generic and long term solution that are easy to
+                  maintain <br></br> Built personal website to put my own
+                  projects with github repositories to contribute with web dev
+                  community and live link is also available on my website which
+                  is deployed via devOp tools like Heroku,Netlify,Firebase and
+                  Github.
+                </p>
               </div>
             </div>
-            <div
-              className="col-lg-4"
-              style={{ color: "black", fontSize: "20px" }}
-            >
+            <div className="col-lg-4" style={{ color: "black" }}>
               <div className="skills-group ">
-                <ul className="skill-lists  " style={{ listStyle: "none" }}>
+                <ul
+                  className="skill-lists  "
+                  style={{ listStyle: "none", fontSize: "1em" }}
+                >
                   <li>JavaScript</li>
                   <li>HTML5/css3</li>
                   <li>ReactJS</li>

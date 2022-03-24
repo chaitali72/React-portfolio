@@ -6,12 +6,9 @@ export class Header extends Component {
       <div>
         <header>
           <img src={profile} alt="profile" className=" image_profile"></img>
-          <h2 className=" text-purple">Chaitali Mahida</h2>
+          <h1>Chaitali Mahida</h1>
         </header>
-        <p className="header_title text-purple">
-          Full Stack Software Developer
-        </p>
-        <span>currently working at Kinoklik</span>
+        <h2 className="header_title ">Full-Stack Software Developer</h2>
       </div>
     );
   }

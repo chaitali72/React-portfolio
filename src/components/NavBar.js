@@ -9,7 +9,7 @@ export class NavBar extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light  main-navigationbar fixed-top mb-2">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light  main-navigationbar fixed-top ">
         <button
           className="navbar-toggler"
           type="button"
@@ -22,7 +22,7 @@ export class NavBar extends Component {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse mb-2" id="navbarNavAltMarkup">
-          <ul className="navbar-nav nav-list mr-0">
+          <ul className="navbar-nav nav-list mr-0 ">
             <li className="navitem-list ">
               <Link
                 className="link nav-item nav-link "
@@ -37,7 +37,7 @@ export class NavBar extends Component {
                 Home
               </Link>
             </li>
-            <li className="navitem-list ">
+            <li className="navitem-list text-purple">
               <Link
                 className="link nav-item nav-link "
                 to="About"
@@ -50,7 +50,7 @@ export class NavBar extends Component {
                 About
               </Link>
             </li>
-            <li className="navitem-list">
+            <li className="navitem-list text-purple">
               <Link
                 className="link nav-item nav-link "
                 to="Projects"
@@ -67,10 +67,7 @@ export class NavBar extends Component {
         </div>
 
         <div className="contact ">
-          <span
-            className="text-purple text-bold"
-            style={{ marginRight: "10px" }}
-          >
+          <span className="text-purple" style={{ marginRight: "10px" }}>
             Contact:{" "}
           </span>
           <a href={`mailto:chaitalismahida@gmail.com`}>

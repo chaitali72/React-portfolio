@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Project from "./SingleProj";
 import portfolioimg from "./images/portfolio.png";
+import reviewapp from "./images/reviewapp.png";
+import reactportfolio from "./images/react-portfolioo.png";
 const projects = [
   {
     id: 1,
@@ -35,6 +37,7 @@ const projects = [
     description:
       "A review application where you can show the random review by different user using previous and next button using Vanilla Javascript,Html5,css3",
     github: "https://github.com/chaitali72/ReactProject-UseState-",
+    img: reviewapp,
     techstack: "React/Axios,node/mongodb",
   },
   {
@@ -42,6 +45,7 @@ const projects = [
     title: "React portfolio App",
     description: "xreate a portfolio using react",
     website: "https://reactportfoilio.netlify.app/",
+    img: reactportfolio,
     github: "https://github.com/chaitali72/portfolioreact",
     techstack: "React/Axios,node/mongodb",
   },
@@ -62,7 +66,6 @@ class Projects extends Component {
     return (
       <div className="mt-5 p-4 App-project">
         <h1>Projects</h1>
-
         <hr />
         <div className="container mb-4 pb-4">
           <div className="project-content row card-section">
